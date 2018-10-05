@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A85510E2163C66700096F92 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A85510D2163C66700096F92 /* main.cpp */; };
+		4A8551162163C6C900096F92 /* range_min_query.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A8551152163C6C900096F92 /* range_min_query.cpp */; };
+		4A8551192163D36900096F92 /* segment_tree_lazy_propogation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A8551182163D36900096F92 /* segment_tree_lazy_propogation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		4A85510A2163C66700096F92 /* hackerearth_practice_solution */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hackerearth_practice_solution; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A85510D2163C66700096F92 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4A8551152163C6C900096F92 /* range_min_query.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = range_min_query.cpp; sourceTree = "<group>"; };
+		4A8551172163C6E100096F92 /* segment_tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = segment_tree.h; sourceTree = "<group>"; };
+		4A8551182163D36900096F92 /* segment_tree_lazy_propogation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = segment_tree_lazy_propogation.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,19 @@
 		4A85510C2163C66700096F92 /* hackerearth_practice_solution */ = {
 			isa = PBXGroup;
 			children = (
-				4A85510D2163C66700096F92 /* main.cpp */,
+				4A8551142163C6A900096F92 /* segment_tree */,
 			);
 			path = hackerearth_practice_solution;
+			sourceTree = "<group>";
+		};
+		4A8551142163C6A900096F92 /* segment_tree */ = {
+			isa = PBXGroup;
+			children = (
+				4A8551152163C6C900096F92 /* range_min_query.cpp */,
+				4A8551172163C6E100096F92 /* segment_tree.h */,
+				4A8551182163D36900096F92 /* segment_tree_lazy_propogation.cpp */,
+			);
+			path = segment_tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +131,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A85510E2163C66700096F92 /* main.cpp in Sources */,
+				4A8551192163D36900096F92 /* segment_tree_lazy_propogation.cpp in Sources */,
+				4A8551162163C6C900096F92 /* range_min_query.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
