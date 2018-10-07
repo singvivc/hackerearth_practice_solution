@@ -31,11 +31,17 @@ public:
             size[i] = 1;
         }
     }
-    ~disjoint_set_union() {}
+    ~disjoint_set_union();
     void make_union(int p, int q);
     int  get_root(int p);
     int* get_size();
 };
+
+disjoint_set_union :: ~disjoint_set_union()
+{
+    delete set;
+    delete size;
+}
 
 void disjoint_set_union :: make_union(int p, int q)
 {
